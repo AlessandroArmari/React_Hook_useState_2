@@ -14,7 +14,7 @@ function App() {
     // I will use it later!
     let array = inputValue.split(""); //--->Here I create an array using of all the "numbers" of inputValue! (BUT NOW THEY ARE STRING!)
     array.sort((a, b) => {
-      return +a - +b;
+      return +a - +b; //--->.sort work properly only with strings---> we re using this shortcut to have them sorted as they were numbers numbers!
     });
     setInputValue(array.join(""));
   };
